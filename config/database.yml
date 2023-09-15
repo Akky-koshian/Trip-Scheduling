@@ -8,3 +8,7 @@ development:
 
 production:
   <<: *default
+  host: dpg-ck227cvhdsdc73efkt6g-a
+  databese: s_original_evjm
+  username: s_original_evjm_user
+  password: Mt1ithCswDwyj0KXhiVsgj7OeKNseTm6
