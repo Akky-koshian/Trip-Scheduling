@@ -1,0 +1,12 @@
+<div class="container">
+    <form action="/schedules/<%= @schedule.id %>" method="post">
+        <h2>スケジュールを編集</h2>
+        <br>
+        <input class="form-control" type="text" name="date" placeholder="日づけ" value="<%= @schedule.date %>"><br>
+        <input class="form-control" type="text" name="time" placeholder="時間" value="<%= @schedule.time.strftime('%H:%M') %>"><br>
+        <input class="form-control" type="text" name="place" placeholder="場所" value="<%= @schedule.place %>"><br>
+        <input class="form-control" type="text" name="schedule" placeholder="スケジュール" value="<%= @schedule.schedule %>"><br>
+        <input class="form-control" type="text" name="note" placeholder="備考" value="<%= @schedule.note %>"><br>
+        <input class="form-control" type="submit" value="完了">
+    </form>
+</div>
